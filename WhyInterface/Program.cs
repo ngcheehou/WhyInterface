@@ -67,7 +67,9 @@ namespace WhyInterface
 
             if (terminated == false)
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("No one has been terminated");
+                Console.ForegroundColor = ConsoleColor.White;
             }
             #endregion
 
