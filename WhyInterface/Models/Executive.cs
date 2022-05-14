@@ -11,5 +11,14 @@ namespace WhyInterface.Models
         public string Name { get; set; }
         public string Designation { get; set; }
         public int KPI { get; set; }
+
+
+        public bool CheckEmployee()
+        {
+            //pretend that we are calling database here
+            return false;
+        }
+
+      
     }
 }

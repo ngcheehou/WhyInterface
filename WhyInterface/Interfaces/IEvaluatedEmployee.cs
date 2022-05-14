@@ -9,5 +9,7 @@ namespace WhyInterface
     public interface IEvaluatedEmployee : IEmployee
     {
         int KPI { get; set; }
+
+        bool CheckEmployee(); 
     }
 }

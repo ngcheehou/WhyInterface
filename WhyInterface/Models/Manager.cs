@@ -19,6 +19,12 @@ namespace WhyInterface.Models
             return evaluatedemployee;
         }
 
+        public bool CheckEmployee()
+        {
+            //pretend that we are calling database here
+            return false;
+        }
+
 
     }
 }
