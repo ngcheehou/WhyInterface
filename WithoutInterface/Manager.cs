@@ -12,10 +12,11 @@ namespace WithoutInterface
         public string Designation { get; set; }
         public int KPI { get; set; }
 
-        public int EvaluateSubordinate(Executive executive)
+        public Executive EvaluateSubordinate(Executive executive)
         {
             Random random = new Random();
-            return random.Next(60, 100);
+            executive.KPI = random.Next(40, 100);
+            return executive;
         }
     }
 }

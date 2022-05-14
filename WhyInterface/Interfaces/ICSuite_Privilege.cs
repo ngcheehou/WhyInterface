@@ -7,9 +7,9 @@ using WhyInterface.Models;
 
 namespace WhyInterface
 {
-    public interface ICSuite_Privilege
+    public interface ICSuite_Privilege:IEmployee
     {
-        void TerminateExecutive(Executive executive);
-        void TerminateManager(Manager manager);
+        bool TerminateEmployee(IEvaluatedEmployee executive);
+        
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WhyInterface
 {
-    public interface IManagementLevelEmployee
+    public interface IManagementLevelEmployee : IEmployee
     {
         IEvaluatedEmployee EvaluateSubordinate(IEvaluatedEmployee employee);
     }

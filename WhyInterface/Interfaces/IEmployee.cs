@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 namespace WhyInterface
 {
     public interface IEmployee
-    { 
+    {
         string Name { get; set; }
-        string Designation { get; set; } 
+        string Designation { get; set; }
     }
 }

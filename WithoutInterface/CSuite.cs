@@ -11,17 +11,21 @@ namespace WithoutInterface
         public string Name { get; set; }
         public string Designation { get; set; }
 
-        public int EvaluateSubordinate(Manager manager)
+        public Manager EvaluateSubordinate(Manager manager)
         {
-            return 100;
+            Random random = new Random();
+            manager.KPI = random.Next(60, 100);
+            return manager;
         }
 
-        public void TerminateEmpployee(Executive executive)
+        public void TerminateExecutive(Executive executive)
         {
+            Console.WriteLine($"Employee {executive.Name} with KPI {executive.KPI} has been terminated because of KPI below 70");
         }
 
-        public void TerminateEmpployee(Manager manager)
+        public void TerminateManager(Manager manager)
         {
+            Console.WriteLine($"Employee {manager.Name} with KPI {manager.KPI} has been terminated because of KPI below 70");
         }
     }
 }

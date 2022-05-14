@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace WhyInterface.Models
 {
-    public class CSuite : IEmployee, IManagementLevelEmployee, ICSuite_Privilege
+
+
+    
+
+    public class CSuite :  IManagementLevelEmployee, ICSuite_Privilege
     {
         public string Name { get; set; }
         public string Designation { get; set; }
@@ -18,16 +22,14 @@ namespace WhyInterface.Models
             return Manager;
         }
 
-        public void TerminateExecutive(Executive ex)
+        public bool TerminateEmployee(IEvaluatedEmployee evemp)
         {
-            Console.WriteLine($"Employee {ex.Name} with KPI {ex.KPI} has been terminated because of KPI below 70");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine($"Employee {evemp.Name} with KPI {evemp.KPI} has been terminated because of KPI below 70");
+            Console.ForegroundColor = ConsoleColor.White;
+            return true;
         }
 
-        public void TerminateManager(Manager mg)
-        {
-            Console.WriteLine($"Employee {mg.Name} with KPI {mg.KPI} has been terminated because of KPI below 70");
-        }
-
-
+       
     }
 }

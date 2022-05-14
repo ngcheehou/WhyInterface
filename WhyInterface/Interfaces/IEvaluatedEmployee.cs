@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WhyInterface
 {
-    public interface IEvaluatedEmployee
+    public interface IEvaluatedEmployee : IEmployee
     {
         int KPI { get; set; }
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WhyInterface.Models
 {
-    public class Manager : IEmployee, IEvaluatedEmployee, IManagementLevelEmployee
+    public class Manager : IManagementLevelEmployee, IEvaluatedEmployee
     {
         public string Name { get; set; }
         public string Designation { get; set; }

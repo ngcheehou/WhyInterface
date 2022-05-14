@@ -10,10 +10,9 @@ namespace WithoutInterface
     {
         static void Main(string[] args)
         {
-            Executive executive = new Executive() { Name = "Alice", Designation = "Programmer"};
-            Executive executive2 = new Executive() { Name = "Babara", Designation = "Data Scientist"};
-            Manager manager = new Manager() { Name = "Charlie", Designation = "Sales Manager"};
-            CSuite cSuite = new CSuite() { Name = "Daisy", Designation = "CFO" };
+Executive executive = new Executive() { Name = "Alice", Designation = "Programmer"}; 
+Manager manager = new Manager() { Name = "Bob", Designation = "Sales Manager"};
+CSuite cSuite = new CSuite() { Name = "Daisy", Designation = "CFO" };
 
 
 
